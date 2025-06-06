@@ -1,0 +1,115 @@
+:root {
+  --verde-claro: #A8D5BA;
+  --verde: #4CAF50;
+  --verde-escuro: #2E7D32;
+  --bege-claro: #F5F5DC;
+  --bege-escuro: #E0D9B5;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--bege-claro);
+  scroll-behavior: smooth;
+}
+
+header {
+  background-color: var(--verde);
+  color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: white;
+  margin: 0 1rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+section {
+  padding: 2rem;
+}
+
+.intro {
+  background-color: white;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.imagem-igreja {
+  width: 100%;
+  border-radius: 8px;
+  margin-top: 1rem;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.card {
+  background-color: var(--bege-escuro);
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  width: 250px;
+  transition: transform 0.3s ease, background-color 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  background-color: var(--verde-claro);
+}
+
+.cultos {
+  text-align: center;
+}
+
+#horarios {
+  display: none;
+  margin-top: 1rem;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+footer {
+  background-color: var(--verde-escuro);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+footer a {
+  color: #fff8dc;
+  text-decoration: underline;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+@media (max-width: 600px) {
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+

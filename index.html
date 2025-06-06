@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ADMAC - Igreja</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>ADMAC</h1>
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="ministerios.html">Ministérios</a>
+      <a href="congressos.html">Congressos</a>
+      <a href="devocionais.html">Devocionais</a>
+      <a href="live.html">Live</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="intro" class="intro">
+      <h2>Conheça nossa igreja</h2>
+      <p>Bem-vindo à ADMAC! Somos uma igreja em familía Junte-se a nós em nossos cultos e eventos.</p>
+      <img src="https://via.placeholder.com/600x300?text=Foto+da+Igreja" alt="Imagem da Igreja" class="imagem-igreja">
+    </section>
+
+    <section id="Departamentos">
+      <h2>Departamentos</h2>
+      <div class="cards"> Projeto Míssões</div>
+        <div class="card">Círculo de Oração (Írmãs)</div>
+        <div class="card">Musipaz (Jovens)</div>
+        <div class="card">Aliança Teen (Adolecentes)</div>
+        <div class="card">Ligados em Cristo (Criançãs)</div>
+        <div class="card">Escola bíblica dominical</div>
+        <div class="card">Campeões da Luz (Varões)
+
+        </div>
+        <div class="card">Nos Acompanhe pelas redes sociais</div>
+        <div class="card">Fique atento as nossas Programações</div>
+      </div>
+    </section>
+
+    <section id="cultos" class="cultos">
+      <h2>Horários dos cultos</h2>
+      <button onclick="mostrarHorarios()">Mostrar os Horários dos Cultos</button>
+      <div id="horarios">
+        <ul>
+          <li>Domingo - Escola Bíblica Dominical 09:00h - Culto de Celebração: 18:20h</li>
+          <li>Segunda - Tarde da Benção: 14h30</li>
+          <li>Quarta - Estudo Bíblico: 20h00</li>
+          <li>Sábado - Culto de Departamentos: 19:30h</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Links úteis:</p>
+    <ul>
+      <li><a href="https://www.youtube.com/@ADMARIACECILIAADMAC" target="_blank">YouTube</a></li>
+      <li><a href="https://www.youtube.com/redirect?event=channel_description&redir_token=QUFFLUhqbTFHN1AyR1J0Q0ZrQng5RmN5NDdITFNzZVpIUXxBQ3Jtc0ttS0FNMG5XdFNkN2JqWUxyaEwyanlfTkdFa2M5eW1rVmUxZ2VjdEg0b3pSLWpjcWdrcW56c29mRXR6c0FBZjhqa002aGhJWUlDN3BwQm9uRHA1YjJFaTBtcHpQZWstRU16RjZwX25YX2JpMlc0S0RFUQ&q=https%3A%2F%2Finstagram.com%2F_admariacecilia%3Figshid%3DMzRlODBiNWFlZA%3D%3D" target="_blank">Instagram</a></li>
+      <li><a href="https://www.youtube.com/redirect?event=channel_description&redir_token=QUFFLUhqbXVVQnBKdW40UFlvTTZ0RGgxcTFtZGZlNjlzZ3xBQ3Jtc0tsMFFqS3Mtbmc3bFB4RnZudHh5THRPWTlzUWtCVUt6MXNfak9CTG5pdm5JRlBSVE5SX0FUVUxDWExPWjZiMzlTT0FwQS1Wd2JBVUYxVGREd3hFWUlEbHVMM3FHOFhNc0NtdHRlSWY4bGY1YWhENXRrZw&q=https%3A%2F%2Fwww.facebook.com%2Fprofile.php%3Fid%3D100068596395415" target="_blank">Facebook</a></li>
+    </ul>
+    <p>&copy; 2025 ADMAC - Todos os direitos reservados</p>
+  </footer>
+
+  <script>
+    function mostrarHorarios() {
+      const horarios = document.getElementById('horarios');
+      horarios.style.display = horarios.style.display === 'block' ? 'none' : 'block';
+    }
+  </script>
+</body>
+</html>
+
