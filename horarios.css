@@ -1,0 +1,53 @@
+/* Página Horários dos Cultos */
+#horarios {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+#horarios h2 {
+  font-size: 2rem;
+  color: #2e7d32;
+  margin-bottom: 1rem;
+  font-family: 'Playfair Display', serif;
+}
+
+#horarios ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 1.5rem;
+}
+
+#horarios li {
+  background-color: #a5d6a7;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  color: #388e3c;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+#horarios li:hover {
+  background-color: #388e3c;
+  color: white;
+}
+
+button {
+  background-color: #388e3c;
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  margin-top: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #1b5e20;
+}
+
+button:active {
+  transform: scale(0.98);
+}
