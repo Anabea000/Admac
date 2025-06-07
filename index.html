@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ADMAC - Igreja</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css"> <!-- Link para o CSS externo -->
 </head>
 <body>
@@ -12,20 +12,22 @@
     <h1>ADMAC</h1>
     <nav>
       <a href="index.html">Início</a>
-      <a href="Festividades.html">Festividades</a>
+      <a href="departamentos.html">Departamentos</a>
+      <a href="cadastros.html">Cadastros</a>
+      <a href="horarios.html">Horários dos Cultos</a>
       <a href="live.html">Live</a>
     </nav>
   </header>
 
   <main>
     <section id="intro" class="intro">
-      <h2>Conheça nossa igreja</h2>
-      <p>Bem-vindo à ADMAC! Somos uma igreja em família. Junte-se a nós em nossos cultos e eventos.</p>
-      <img src="https://via.placeholder.com/600x300?text=Foto+da+Igreja" alt="Foto da fachada da Igreja ADMAC" class="imagem-igreja">
+      <h2>Bem-vindo à nossa igreja!</h2>
+      <p>Somos uma comunidade vibrante e acolhedora. Junte-se a nós para aprender, crescer e se conectar!</p>
+      <img src="https://via.placeholder.com/800x400?text=Foto+da+Igreja" alt="Foto da fachada da Igreja ADMAC" class="imagem-igreja">
     </section>
 
-    <section id="Departamentos">
-      <h2>Departamentos</h2>
+    <section id="departamentos">
+      <h2>Conheça nossos Departamentos</h2>
       <div class="cards">
         <div class="card">Projeto Missões</div>
         <div class="card">Círculo de Oração (Irmãs)</div>
@@ -35,14 +37,13 @@
         <div class="card">Escola Bíblica Dominical</div>
         <div class="card">Campeões da Luz (Varões)</div>
         <div class="card">Nos acompanhe pelas redes sociais</div>
-        <div class="card">Fique atento às nossas programações</div>
       </div>
     </section>
 
-    <section id="cultos" class="cultos">
-      <h2>Horários dos cultos</h2>
-      <button onclick="mostrarHorarios()" aria-expanded="false" aria-controls="horarios">Mostrar os Horários dos Cultos</button>
-      <div id="horarios" aria-hidden="true">
+    <section id="horarios" class="cultos">
+      <h2>Horários dos Cultos</h2>
+      <button onclick="mostrarHorarios()">Mostrar os Horários dos Cultos</button>
+      <div id="horarios-lista">
         <ul>
           <li>Domingo - Escola Bíblica Dominical: 09:00h | Culto de Celebração: 18:20h</li>
           <li>Segunda - Tarde da Bênção: 14h30</li>
@@ -65,16 +66,8 @@
 
   <script>
     function mostrarHorarios() {
-      const horarios = document.getElementById('horarios');
-      const button = document.querySelector('button');
-      
-      // Alternar visibilidade dos horários
-      const isVisible = horarios.style.display === 'block';
-      horarios.style.display = isVisible ? 'none' : 'block';
-
-      // Atualizar atributos ARIA
-      button.setAttribute('aria-expanded', !isVisible);
-      horarios.setAttribute('aria-hidden', isVisible);
+      const horarios = document.getElementById('horarios-lista');
+      horarios.style.display = horarios.style.display === 'block' ? 'none' : 'block';
     }
   </script>
 </body>

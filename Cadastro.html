@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro - ADMAC</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Cadastro</h1>
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="departamentos.html">Departamentos</a>
+      <a href="cadastros.html">Cadastros</a>
+      <a href="horarios.html">Horários dos Cultos</a>
+      <a href="live.html">Live</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="cadastro">
+      <h2>Faça seu Cadastro</h2>
+      <p>Para se inscrever em nossos eventos, cultos ou se tornar membro da igreja, preencha o formulário abaixo.</p>
+
+      <form action="#" method="post">
+        <label for="nome">Nome Completo:</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone">
+
+        <label for="departamento">Departamento:</label>
+        <select id="departamento" name="departamento">
+          <option value="missoes">Projeto Missões</option>
+          <option value="oracao">Círculo de Oração (Irmãs)</option>
+          <option value="musipaz">Musipaz (Jovens)</option>
+          <option value="aliança_teen">Aliança Teen (Adolescentes)</option>
+          <option value="ligados_em_cristo">Ligados em Cristo (Crianças)</option>
+          <option value="escola_biblica">Escola Bíblica Dominical</option>
+        </select>
+
+        <button type="submit">Enviar Cadastro</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 ADMAC - Todos os direitos reservados</p>
+  </footer>
+</body>
+</html>
