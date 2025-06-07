@@ -12,7 +12,7 @@
     <h1>ADMAC</h1>
     <nav>
       <a href="index.html">Início</a>
-      <a href="Festividades.html">Festividade</a>
+      <a href="Festividades.html">Festividades</a>
       <a href="live.html">Live</a>
     </nav>
   </header>
@@ -41,8 +41,8 @@
 
     <section id="cultos" class="cultos">
       <h2>Horários dos cultos</h2>
-      <button onclick="mostrarHorarios()">Mostrar os Horários dos Cultos</button>
-      <div id="horarios">
+      <button onclick="mostrarHorarios()" aria-expanded="false" aria-controls="horarios">Mostrar os Horários dos Cultos</button>
+      <div id="horarios" aria-hidden="true">
         <ul>
           <li>Domingo - Escola Bíblica Dominical: 09:00h | Culto de Celebração: 18:20h</li>
           <li>Segunda - Tarde da Bênção: 14h30</li>
@@ -66,7 +66,15 @@
   <script>
     function mostrarHorarios() {
       const horarios = document.getElementById('horarios');
-      horarios.style.display = horarios.style.display === 'block' ? 'none' : 'block';
+      const button = document.querySelector('button');
+      
+      // Alternar visibilidade dos horários
+      const isVisible = horarios.style.display === 'block';
+      horarios.style.display = isVisible ? 'none' : 'block';
+
+      // Atualizar atributos ARIA
+      button.setAttribute('aria-expanded', !isVisible);
+      horarios.setAttribute('aria-hidden', isVisible);
     }
   </script>
 </body>
